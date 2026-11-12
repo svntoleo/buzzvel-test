@@ -1,5 +1,14 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const inter = localFont({
+  src: "../public/fonts/inter-latin.woff2",
+  variable: "--font-inter",
+  display: "swap",
+  weight: "100 900",
+  preload: true,
+});
 
 export const metadata: Metadata = {
   title: "Luma — Practical learning for curious people",
@@ -14,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={inter.variable}>{children}</body>
     </html>
   );
 }

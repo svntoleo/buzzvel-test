@@ -26,3 +26,4 @@ npm run deploy:firebase
 ```
 
 Next.js image optimization is disabled so exported images are served as static files.
+The Inter variable font is self-hosted in `public/fonts/` under the SIL Open Font License.
