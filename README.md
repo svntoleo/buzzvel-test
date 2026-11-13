@@ -70,7 +70,7 @@ The deploy script publishes Hosting only and does not build the site for you. Re
 
 ## Approximate effort
 
-Estimated implementation and refinement effort: about **8 hours** across the responsive page, component refactor, typography and image updates, static hosting setup, and image-cache fix. This is a retrospective estimate, not tracked time.
+Estimated implementation and refinement effort: about **2 hours** across the responsive page, component refactor, typography and image updates, static hosting setup, and image-cache fix. This is a retrospective estimate, not tracked time.
 
 ## AI tools
 
