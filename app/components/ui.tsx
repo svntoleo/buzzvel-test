@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
+import { avatarPhotos } from "./content";
 
 type SectionHeadingProps = {
   eyebrow: string;
@@ -40,10 +41,10 @@ export function SectionHeading({
 export function AvatarStack({ count = 3 }: { count?: number }) {
   return (
     <div className="avatar-stack" aria-label="Luma learners">
-      {Array.from({ length: count }, (_, index) => (
+      {avatarPhotos.slice(0, count).map((src) => (
         <Image
-          key={index}
-          src={`/images/avatar-${index + 1}.jpg`}
+          key={src.src}
+          src={src}
           alt=""
           width={30}
           height={30}

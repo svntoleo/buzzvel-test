@@ -1,4 +1,7 @@
 import Image from "next/image";
+import heroLearner from "../assets/images/hero-learner.jpg";
+import productDesign from "../assets/images/product-design.jpg";
+import avatar4 from "../assets/images/avatar-4.jpg";
 import { courseCategories, footerColumns, learningSteps, studentPhotos } from "./content";
 import { ContactForm } from "./contact-form";
 import { LinkButton, Logo } from "./links";
@@ -24,7 +27,7 @@ export function HeroSection() {
         <div className="hero-visual">
           <span className="hero-orb" aria-hidden="true" />
           <Image
-            src="/images/hero-learner.jpg"
+            src={heroLearner}
             alt="A learner taking an online course at a laptop"
             width={760}
             height={620}
@@ -72,7 +75,7 @@ export function FeaturedCourseSection() {
       <div className="container featured-layout">
         <div className="featured-image-wrap">
           <Image
-            src="/images/product-design.jpg"
+            src={productDesign}
             alt="A product designer sketching ideas beside material samples"
             width={760}
             height={560}
@@ -133,7 +136,7 @@ export function TestimonialSection() {
             actually leave with something I can use.
           </blockquote>
           <figcaption>
-            <Image src="/images/avatar-4.jpg" alt="" width={48} height={48} className="quote-avatar" />
+            <Image src={avatar4} alt="" width={48} height={48} className="quote-avatar" />
             <span><strong>Alex Morgan</strong><small>Product Manager</small></span>
           </figcaption>
         </figure>
@@ -169,7 +172,7 @@ export function PeopleSection() {
           <span className="collage-disc" aria-hidden="true" />
           {studentPhotos.map(({ src, alt }, index) => (
             <Image
-              key={src}
+              key={src.src}
               src={src}
               alt={alt}
               width={180}

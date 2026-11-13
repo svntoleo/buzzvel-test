@@ -1,3 +1,20 @@
+import studentPhoto1 from "../assets/images/student-1.jpg";
+import studentPhoto2 from "../assets/images/student-2.jpg";
+import studentPhoto3 from "../assets/images/student-3.jpg";
+import studentPhoto4 from "../assets/images/student-4.jpg";
+import studentPhoto5 from "../assets/images/student-5.jpg";
+import studentPhoto6 from "../assets/images/student-6.jpg";
+import studentPhoto7 from "../assets/images/student-7.jpg";
+import studentPhoto8 from "../assets/images/student-8.jpg";
+import studentPhoto9 from "../assets/images/student-9.jpg";
+import studentPhoto10 from "../assets/images/student-10.jpg";
+import studentPhoto11 from "../assets/images/student-11.jpg";
+import studentPhoto12 from "../assets/images/student-12.jpg";
+import avatar1 from "../assets/images/avatar-1.jpg";
+import avatar2 from "../assets/images/avatar-2.jpg";
+import avatar3 from "../assets/images/avatar-3.jpg";
+import avatar4 from "../assets/images/avatar-4.jpg";
+
 export type CourseCategory = {
   number: string;
   title: string;
@@ -66,19 +83,21 @@ export const learningSteps: LearningStep[] = [
 ];
 
 export const studentPhotos = [
-  { src: "/images/student-1.jpg", alt: "Student sketching in a notebook" },
-  { src: "/images/student-2.jpg", alt: "Teacher leading a workshop" },
-  { src: "/images/student-3.jpg", alt: "Student learning at a desk" },
-  { src: "/images/student-4.jpg", alt: "Creative professional working" },
-  { src: "/images/student-5.jpg", alt: "Design team collaborating" },
-  { src: "/images/student-6.jpg", alt: "Student studying on a laptop" },
-  { src: "/images/student-7.jpg", alt: "Instructor sharing an idea" },
-  { src: "/images/student-8.jpg", alt: "Student taking notes" },
-  { src: "/images/student-9.jpg", alt: "Learners working together" },
-  { src: "/images/student-10.jpg", alt: "Teacher working with a student" },
-  { src: "/images/student-11.jpg", alt: "Student reading in a bright room" },
-  { src: "/images/student-12.jpg", alt: "Creative team planning a project" },
+  { src: studentPhoto1, alt: "Student sketching in a notebook" },
+  { src: studentPhoto2, alt: "Teacher leading a workshop" },
+  { src: studentPhoto3, alt: "Student learning at a desk" },
+  { src: studentPhoto4, alt: "Creative professional working" },
+  { src: studentPhoto5, alt: "Design team collaborating" },
+  { src: studentPhoto6, alt: "Student studying on a laptop" },
+  { src: studentPhoto7, alt: "Instructor sharing an idea" },
+  { src: studentPhoto8, alt: "Student taking notes" },
+  { src: studentPhoto9, alt: "Learners working together" },
+  { src: studentPhoto10, alt: "Teacher working with a student" },
+  { src: studentPhoto11, alt: "Student reading in a bright room" },
+  { src: studentPhoto12, alt: "Creative team planning a project" },
 ];
+
+export const avatarPhotos = [avatar1, avatar2, avatar3, avatar4];
 
 export const footerColumns: FooterColumn[] = [
   {

@@ -27,3 +27,8 @@ npm run deploy:firebase
 
 Next.js image optimization is disabled so exported images are served as static files.
 The Inter variable font is self-hosted in `public/fonts/` under the SIL Open Font License.
+Page images live in `app/assets/images/` and are imported statically so each image gets a
+content-hashed URL. Keep the immutable cache policy for `/_next/static/` assets; don't
+copy page images into `public/images/` or add an immutable policy for mutable image paths.
+This ensures replacing an image changes its URL and prevents browser/CDN caches from
+serving the previous file after deployment.
